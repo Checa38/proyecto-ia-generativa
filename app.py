@@ -48,7 +48,10 @@ class AgentState(TypedDict):
 def init_agent():
     """Inicializa embeddings, vectorstore, LLM y grafo. Se ejecuta solo una vez."""
     
-    api_key = os.getenv("GEMINI_API_KEY")
+    try:
+        api_key = st.secrets["GEMINI_API_KEY"]
+    except:
+        api_key = os.getenv("GEMINI_API_KEY")
     
     # Embeddings y vectorstore
     embeddings = GoogleGenerativeAIEmbeddings(
