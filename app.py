@@ -11,27 +11,7 @@ from typing import TypedDict, List
 
 # ─── Configuración ────────────────────────────────────────────────────────────
 load_dotenv()
-# ─── DIAGNÓSTICO (borrar antes de entregar) ───────────────────────────────────
-import streamlit as st
 
-st.write("### Debug de API Key")
-
-# Ver qué encuentra Streamlit en secrets
-try:
-    secret_key = st.secrets["GOOGLE_API_KEY"]
-    st.success(f"Secrets OK: {secret_key[:8]}...")
-except Exception as e:
-    st.error(f"Secrets NO encontrado: {e}")
-
-# Ver qué encuentra en variables de entorno
-import os
-env_key = os.getenv("GOOGLE_API_KEY")
-if env_key:
-    st.success(f"ENV OK: {env_key[:8]}...")
-else:
-    st.error("ENV NO encontrado")
-
-st.stop()  # Para aquí hasta que lo arregles
 st.set_page_config(
     page_title="Agente Experto en Musculación",
     page_icon="https://www.gstatic.com/lamda/images/gemini_favicon_f069958c85030456e93de685481c559f160ea06.svg",
