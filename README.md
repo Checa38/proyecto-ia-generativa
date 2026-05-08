@@ -9,6 +9,7 @@ El gran desarrollo de los modelos de lenguaje de gran escala ha abierto la posib
 Para ello se ha implementado un pipeline de Retrieval-Augmented Generation (RAG) usando Google Gemini como modelo de lenguaje y sistema de embeddings, ChromaDB como base de datos vectorial y LangGraph como framework del agente. Además, el agente mantiene memoria de conversación entre turnos, lo que le permite recordar el contexto de preguntas anteriores y mantener coherencia a lo largo de la sesión.
 
 La aplicación puede usarse tanto desde el propio notebook como desde una interfaz web desplegada en **Streamlit Cloud**: 
+
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Open%20App-FF4B4B?style=for-the-badge&logo=streamlit)](https://proyecto-ia-generativa-3kbcelwu9ukkrzvehgpybo.streamlit.app/)
 ---
 
