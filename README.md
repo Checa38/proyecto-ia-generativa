@@ -85,6 +85,7 @@ streamlit run app.py
 ```
 
 Se abrirá automáticamente en `http://localhost:8501`. La app también está desplegada públicamente en:
+
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Open%20App-FF4B4B?style=for-the-badge&logo=streamlit)](https://proyecto-ia-generativa-3kbcelwu9ukkrzvehgpybo.streamlit.app/)
 
 ---
