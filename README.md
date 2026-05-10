@@ -60,7 +60,7 @@ pip install langchain langchain-google-genai langchain-chroma langchain-communit
 Crear un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
 ```
-GOOGLE_API_KEY=tu_clave_aqui
+GEMINI_API_KEY=tu_clave_aqui
 ```
 
 ### Ejecución del notebook
@@ -85,7 +85,7 @@ streamlit run app.py
 ```
 
 Se abrirá automáticamente en `http://localhost:8501`. La app también está desplegada públicamente en:
-https://proyecto-ia-generativa-3kbcelwu9ukkrzvehgpybo.streamlit.app/
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Open%20App-FF4B4B?style=for-the-badge&logo=streamlit)](https://proyecto-ia-generativa-3kbcelwu9ukkrzvehgpybo.streamlit.app/)
 
 ---
 
@@ -178,15 +178,6 @@ python-dotenv
 google-generativeai
 streamlit
 ```
-
-Instalar todo con:
-
-```bash
-pip install langchain langchain-google-genai langchain-chroma langchain-community \
-            langchain-text-splitters langgraph chromadb pypdf python-dotenv \
-            google-generativeai streamlit
-```
-
 ---
 
 ## Estructura del Proyecto
@@ -208,5 +199,5 @@ proyecto_gym/
 ---
 
 Carlos Checa Moreno
-Proyecto Final — IA Generativa  
+Proyecto Final - IA Generativa  
 Módulo: Asistente Experto con Gemini, RAG y Agentes
